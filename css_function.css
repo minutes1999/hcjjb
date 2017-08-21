@@ -1,8 +1,8 @@
 /*
 * @Author: axii
 * @Date:   2017-08-19 14:03:17
-* @Last Modified by:   axii
-* @Last Modified time: 2017-08-19 17:11:38
+* @Last Modified by:   Minutes1999
+* @Last Modified time: 2017-08-20 17:15:53
 */
 div.ex{
 	background-color: #eef;
@@ -23,4 +23,15 @@ div.panel{
 	background-color: #eef;
 	padding: 7px;
 	border:solid 1px black;
+}
+div.chaining{
+	position: relative;
+	left: 300px;
+}
+p.chain{
+	position: relative;
+	left: 300px;
+}
+div.center{
+	text-align: center;
 }

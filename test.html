@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test</title>
+	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("button").click(function(){
+				var div=$("div");
+				div.animate({height:'300px'},"slow");
+				div.animate({width:'300px'},"slow");
+				div.animate({height:'100px'},"slow");
+				div.animate({width:'100px'},"slow");
+			});
+		});
+	</script>
+</head>
+<body>
+<button>开始动画</button>
+	<div style="height: 100px;
+	width: 100px;
+	background-color: green;
+	border: solid 1px;
+	margin-left: 100px;">
+		
+	</div>
+</body>
+</html>
