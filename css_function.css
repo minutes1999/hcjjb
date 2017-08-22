@@ -1,37 +1,41 @@
 /*
 * @Author: axii
 * @Date:   2017-08-19 14:03:17
-* @Last Modified by:   Minutes1999
-* @Last Modified time: 2017-08-20 17:15:53
+* @Last Modified by:   minutes1999
+* @Last Modified time: 2017-08-22 16:50:13
 */
-div.ex{
+.ex{
 	background-color: #eef;
 	border:solid 1px black;
 	height: 100px;
 	width: 100px;
 	margin-left: 100px;
 }
-p.flip{
+.flip{
 	margin: 0px;
 	padding: 5px;
 	text-align: center;
 	background: #e5eecc;
 	border: solid 1px black;
 }
-div.panel{
+.panel{
 	height: 200px;
 	background-color: #eef;
 	padding: 7px;
 	border:solid 1px black;
 }
-div.chaining{
+.chaining{
 	position: relative;
 	left: 300px;
 }
-p.chain{
+.chain{
 	position: relative;
 	left: 300px;
 }
-div.center{
+.center{
 	text-align: center;
+}
+.blue{
+	color: blue;
+	font-size: 24;
 }

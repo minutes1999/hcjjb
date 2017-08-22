@@ -70,19 +70,62 @@
 	<button id="slideup">滑上</button><br>
 	<button id="slidetoggle">Toggle</button><br>
 <!-- Jquery动画 -->
-	<div class="ex" style="text-align: center;position: absolute;"></div><br>
-	<button id="animate">开始动画</button><br>
-	<button id="stop">停止div动画</button><br>
-	<div class="chaining" style="height: 200px;width: 200px;border: solid 2px;"></div><br>
+	<div class="ex" style="text-align: center;position: absolute;">
+	</div>
+	<br>
+	    <button id="animate">开始动画</button><br>
+	    <button id="stop">停止div动画</button><br>
+	    <div class="chaining" style="height: 200px;width: 200px;border: solid 2px;">
+	    </div>
+	<br>
 	<p class="chain">点击这里chain</p><br>
 	<p id="dom0" style="text-align: center;">这是一个<strong>DOM</strong><em>测试</em></p>
 	<div class="center">
-	<button id="btn1">text</button>
-	<button id="btn2">html</button></div>
+	    <button id="btn1">text</button>
+	    <button id="btn2">html</button>
+	</div>
 	<p>输入密码：<input type="test" name="密码" value="7533608" id="dom1"></p><br>
 	<button id="btn3">显示密码</button>
 	<p><a href="http://www.google.com" id="pa">Link</a></p>
-	<button id="btn4">显示href</button>
+	<button id="btn4">显示href</button><br>
+	<button id="btn5">新旧文本</button><br>
+	<div style="text-align: center;">
+	    <p id="dom2">This is <strong>Old</strong>text.</p>
+	</div>
+	<br>
+	<div style="text-align: center;">
+	    <button onclick="afterText()">After Text</button>
+	    <button onclick="beforeText()">Before Text</button></div><br>
+	    <button id="btn6">改变属性</button><br>
+	<div id="div_1" class="center" style="background-color: grey;
+	    height: 300px;
+	    height: 200px;">
+	    <p id="div_1_p0">这是一个div下的p0标签</p>
+	    <p id="div_1_p1">这是一个div下的p1标签</p>
+	    <p id="div_1_p2">这是一个div下的p2标签</p>
+	    <p id="div_1_p3">这是一个div下的p3标签</p>
+	</div>
+	<div class="center">
+	    <button id="remove">remove DIV_1_p0</button>
+	</div>
+	<div id="div_2" class="center">
+		<button id="empty">empty div 的P1元素</button>
+	</div>
+	<div id="div_3">
+		<button id="addclass_0">addClass</button>
+	</div>
+	<div id="div_4" class="center">
+		<button id="removeClass_0">Remove class Center</button>
+	</div>
+	<div id="div_5" class="center">
+		<button id="toggleClass_0">Toggle class Center</button>
+	</div>
+	<div id="div_6" class="center">
+		<button id="btn_css">CSS属性</button>
+	</div>
+	<div id="div_7">
+		<button id="btn7">显示width&height</button>
+	</div>
 
     <script type="text/javascript" src="my_jquery_function.js"></script>
 <!--    jQuery的script放置于/body前面，而不放置于head ：脚本会阻塞浏览器的并行下载。不同服务器的多个图像可以同时下载，不过一旦浏览器遇到一个<script>标记，就不能并行的下载多个元素了。把<script>标记放在最下面，这意味着有助于提高页面的加载速度。-->

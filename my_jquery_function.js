@@ -1,8 +1,8 @@
 /*
 * @Author: axii
 * @Date:   2017-08-19 17:05:16
-* @Last Modified by:   Minutes1999
-* @Last Modified time: 2017-08-20 17:29:24
+* @Last Modified by:   minutes1999
+* @Last Modified time: 2017-08-22 19:41:20
 */
 $(document).ready(function(){
     $("#anobtn").click(function(){
@@ -98,17 +98,96 @@ $("#stop").click(function(){
 $("p.chain").click(function(){
   $("div.chaining").css("background-color","brown").fadeOut(1000).slideDown(2000);
 });
+// $("#btn1").click(function(){
+//   alert("text:"+$("#dom0").text());
+// });
+// $("#btn2").click(function(){
+//   alert("html:"+$("#dom0").html());
+// });
+// $("#btn3").click(function(){
+//   alert("密码:"+$("#dom1").val());
+// });
+// $("#btn4").click(function(){
+//   alert("href:"+$("#pa").attr("href"));
+// });
 $("#btn1").click(function(){
-  alert("text:"+$("#dom0").text());
+  $("#dom0").text("This is A DOM Test!");
 });
 $("#btn2").click(function(){
-  alert("html:"+$("#dom0").html());
+  $("#dom0").html("<p>THIS IS DOM</p>");
 });
 $("#btn3").click(function(){
-  alert("密码:"+$("#dom1").val());
+  $("#dom1").val("cunter striker,Go");
 });
-$("#btn4").click(function(){
-  alert("href:"+$("#pa").attr("href"));
+// text 回调
+$("#btn5").click(function(){
+  $("#dom2").text(function(i,origText){
+    return "Old text:"+origText+"New text:这是新文本!\n"+"index:"+i;
+  });
 });
+
+// 多项改变attr
+// $("#btn6").click(function(){
+//   $("#pa").attr({"href":"http://www.nopls.com", 
+//     "title":"jquery_study"});
 // });
+
+// attend()
+// $("#btn6").click(function(){
+//   $("p#dom2").append("append 一些东西");
+// });
+// prepend()
+// $("#btn6").click(function(){
+//   $("p#dom2").prepend("prepend_一些东西");
+// });
+// });
+$("#remove").click(function(){
+  $("p").remove("#div_1_p0");
 });
+$("#empty").click(function(){
+  $("#div_1").empty();
+});
+// addClass() removeClass() toggleClass()
+$("#addclass_0").click(function(){
+  // $("#div_1_p2").addClass("blue");
+  $("#div_2").addClass("center");
+  $("#div_1").addClass("center blue");
+  $("#div_3").addClass("center");
+});
+$("#removeClass_0").click(function(){
+  $("#div_1,#div_2").removeClass("center");
+});
+$("#toggleClass_0").click(function(){
+  $("#div_1,#div_2").toggleClass("center");
+});
+$("#btn_css").click(function(){
+  // alert("Div_1的CSS属性为："+$("#div_1").css("background-color"));
+  $("p#div_1_p3").css("font-size",30);
+});
+$("#btn7").click(function(){
+  var txt="";
+  // += 类似循环，txt第一次 = ""+...   第二次为第一次获得的txt+...
+  txt+="width:"+$("#div_1").width()+"</br>";
+  txt+="height:"+$("#div_1").height()+"</br>";
+  $("#div_1").append(txt); 
+  // innerHeight()、 innerWidth() :包含内边距
+});
+
+
+});
+// after()
+// 定义函数时要在 document.ready()外面  ！！！
+function afterText(){
+  var text1="<b>i &ensp;</b>";
+  var text2=$("<i> Love</i>");
+  var text3=document.createElement("small");
+  text3.innerHTML="jQuery!";
+  $("p#dom2").after(text1,text2,text3);
+}
+function beforeText(){
+  var text1="<b>i &ensp;</b>";
+  var text2=$("<i> Love</i>");
+  var text3=document.createElement("small");
+  text3.innerHTML="jQuery!";
+  $("p#dom2").before(text1,text2,text3);
+}
