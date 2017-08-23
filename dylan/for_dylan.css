@@ -2,22 +2,34 @@
 * @Author: axii
 * @Date:   2017-08-23 15:52:56
 * @Last Modified by:   axii
-* @Last Modified time: 2017-08-23 17:43:32
+* @Last Modified time: 2017-08-23 21:40:54
 */
 html,body{
     height: 100%;
     width: 100%;
 }
-.float_left{
-	float: left;
+.img_background{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;height: 100%;
+
+	background-image: url(http://p1.kidulty.com/ckeditor/2016/10/14/images/11.png);
+	background-size: cover;
+
+	/*background-color: rgba(0,0,0,0.48);*/
+	opacity: 0.48;
 }
-.float_right{
-	float: right;
+.img_head{
+	position: absolute;
+	width: 500px;
+	height: 260px;
+	background-image: url(hit_skate.jpg);
+	margin: 0 auto;
 }
-.center_axii{
+.css_center{
 	text-align: center;
 }
-.text_words_family{
+.text_family{
 	font-family: Helvetica;
-	font-size: 28;
 }
